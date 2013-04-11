@@ -18,12 +18,19 @@ $(function() {
 
 	/* Open Images */
 	function intipreview(object, path, caption) {
-		var close = $('<figure class="close"></figure>');
-		
-		object
-			.html('<img src="' + path + '"/><div class="fullCaption">' + caption + '</div>').append(close)
-			.slideDown('slow');
-		
+		var close = $('<figure class="close"></figure>'),
+			img = $('<img src="' + path + '"/>');
+
+		img.load(
+			function() {
+				object
+					.html('<div class="fullCaption">' + caption + '</div>')
+					.prepend(img)
+					.append(close)
+					.slideDown('slow');
+			}
+		);
+				
 		close.on(
 			'click',
 			function() {
