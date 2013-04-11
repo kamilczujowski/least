@@ -1,0 +1,417 @@
+/* @group LESS */
+
+/* FONT */	 
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+.Georgia(@size, @height, @weight: normal) {
+	font-family: Georgia, Arial, sans-serif;
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+.Arvo(@size, @height, @weight: normal) {
+	font-family: Arvo, Arial, sans-serif;
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+.Helvetica (@size, @height, @weight: normal) {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+.Courier (@size, @height, @weight: normal) {
+	font-family: Courier, Arial, sans-serif;
+	font-size: @size;
+	line-height: @height;
+	font-weight: @weight;
+}
+/* @group Colors */
+@black: #000;
+@white: #fff;
+@red: #e94439;
+@codeBlue: #53a0cd;
+@whiteLight: #fafafa;
+
+@borderWhite: #FFF;
+@borderBlack: #333;
+
+/* @end */
+
+/* @group Effects */
+
+.transition(...) {
+	transition: @arguments;
+	-o-transition: @arguments;
+	-ms-transition: @arguments;
+	-moz-transition: @arguments;
+	-webkit-transition: @arguments;
+}
+/* @end */
+
+/* @group Mixins */
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html {
+	background-color: #fdfcfb;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 50px auto;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: @red;
+	text-decoration: none;
+	
+	&:hover {
+		color: lighten(@red, 10%);
+		text-decoration: underline;
+	}
+}
+
+h2 {
+	.Arvo(30px, 25px, 500);
+	text-transform: uppercase;
+	color: @white;
+	letter-spacing: 1px;
+}
+
+h1 {
+	.Arvo(60px, 60px, 400);
+	color: @red;
+	
+	text-transform: lowercase;
+}
+
+p {
+	.Georgia(15px, 15px, 100);
+	color: @white;
+}
+
+/* @end */
+
+/* @group Header */
+header {
+	min-width:100%;
+	width: 100%;
+	text-align: center;
+	
+	margin: 0 0 25px 0;
+	
+	p {
+		.Arvo(15px, 25px, 400);
+		color: @red;
+		
+		text-transform: uppercase;
+	}
+	
+	h1 {
+		
+		&:before {
+			content: url('../img/page/logo.png');
+			width: 146px;
+			height: 150px;
+			
+			margin: 0;
+		}
+		
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			&:before  {
+				content: url('../img/page/logo@2x.png');
+			}
+		}
+	}
+	
+	figure {
+		width: 250px;
+		background-color: @red;
+		
+		box-shadow: 1px 1px 5px;
+		
+		position: absolute;
+		right: -60px;
+		top: 0;
+		
+		overflow: hidden;
+		
+		padding: 5px 0;
+		
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		
+		.transition(background-color, 0.5s);
+		
+		a {
+			.Helvetica(14px, 18px, 400);
+			color: @white;
+			
+			&:hover {
+				color: @white;
+				text-decoration: none;
+			}
+		}
+		
+		&:hover {
+			background-color: fadeout(@red, 25%);
+		}
+	}
+}
+/* @end */
+
+/* @group Article */
+article {
+	width: 100%;
+	min-width: 100%;
+	
+	text-align: center;
+	
+	margin: 0 0 30px 0;
+	
+	&:first-child {
+		margin: 0;
+	}
+	
+	h2 {
+		.Arvo(20px, 25px, 400);
+		color: @red;
+		
+		text-transform: uppercase;
+	}
+	
+	h3 {
+		.Arvo(15px, 25px, 400);
+		color: @red;
+		text-transform: uppercase;
+		
+		margin: 15px 0 0 0;
+	}
+	
+	p {
+		.Helvetica(14px, 18px, 300);
+		color: @black;
+		display: inline-block;
+		margin: 15px 0 0;
+		
+		max-width: 650px;
+	}
+	
+	a#button {
+		background-color: @red;
+		
+		max-width: 150px;
+		
+		color: @white;
+		
+		display: block;
+		margin: 20px auto 0 auto;
+		
+		padding: 15px 30px;
+		border-radius: 8px;
+		
+		.Helvetica(20px, 20px, 300);
+		.transition(background-color, 0.5s);
+		
+		&:hover {
+			text-decoration: none;
+			background-color: fadeout(@red, 25%);
+		}
+	}
+	
+	strong {
+		font-weight:600;
+	}
+	
+	figure {
+		max-width: 960px;
+		margin: 25px auto 0 auto;
+	}
+}
+/* @end */
+
+/* @group Main */
+
+section {
+	min-width:100%;
+	width: 100%;
+	min-height:100%;
+	text-align: center;
+	padding: 30px 0;
+	margin-bottom: 30px;
+	
+	background-color: @borderBlack;
+	
+	/* @group Fullimage */
+	#fullPreview {
+		background-color: @borderBlack;
+		border-top: 2px solid @borderBlack;
+		border-bottom: 2px solid @borderBlack;
+		padding: 50px 0 30px 0;
+		
+		display: none;
+		
+		img,
+		.fullCaption {
+		    max-width:960px;
+		    width:100%;
+		    margin:0 auto;
+		    display:block;
+		}
+		
+		.fullCaption {
+			.Helvetica(13px, 15px, 300);
+			color: @white;
+			margin: 15px auto 0 auto;
+		}
+		
+		figure {
+			background-image: url('../img/effects/close.png');
+			background-size: 100%;
+			
+			width: 30px;
+			height: 30px;
+			
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			
+			cursor: pointer;
+		}
+	}
+	
+	/* @end */
+	
+	/* @group Smallimages */
+	li {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		
+			&:hover .overLayer {
+				.transition(opacity, 0.3s linear);
+				opacity: 0.6;
+				display: block;
+				background: lighten(@black, 50%);
+			}
+			
+			&:hover .infoLayer {
+				.transition(opacity, 0.3s linear);
+				opacity: 1;
+				display: block;
+			}
+		
+		a {
+			display: block;
+			width: 240px;
+			height: 150px;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			z-index: 6;
+		}
+		
+		img {
+			border: none;
+			margin: 10px 10px 0 0;
+		}
+		
+		/* @group Over */
+		.overLayer,
+		.infoLayer {
+			.transition(opacity, 0.3s linear);
+			width: 240px;
+			height: 150px;
+		    position: absolute;
+		    text-align: center;
+		    opacity: 0;
+		    top: 10px;
+		    left: 0;
+		    z-index: 4;
+		    
+		    ul {
+				padding: 50px 0 0 0;
+					
+				li {
+					display:block;
+					margin: 0 auto;
+					width: 200px;
+					padding: 0 0 5px 0;
+						
+					&:first-child {
+						border-bottom: 2px @borderWhite solid;
+					}
+					
+					&:last-child {
+						padding: 5px 0 0 0;
+						text-transform: lowercase;
+					}
+					
+					h2 {
+						font-size: 25px;
+					}
+				}
+			}
+		/* @end */	
+		}
+		/* @group Description */
+		.projectInfo {
+			display: none;
+		}
+		/* @end *
+	/* @end */
+	}
+}
+/* end */
+
+/* @group Footer */
+footer {
+	min-width:100%;
+	width: 100%;
+	text-align: center;
+	
+	margin: 50px 0 0 0;
+	
+	p {
+		.Helvetica(14px, 22px, 300);
+		color: @black;
+		display: ;
+	}
+	
+	span {
+		display: inline-block;
+		color: @red;
+		font-size: 20px;
+		margin: 0 3px;
+		.transition(color, 0.5s);
+		
+		&:hover {
+			color: lighten(@red, 10%);
+		}
+	}
+	
+	a {
+		color: @red;
+		
+		&:hover {
+			color: lighten(@red, 10%);
+			text-decoration: underline;
+		}
+	}
+}
+/* @end */
