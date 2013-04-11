@@ -3,6 +3,8 @@ least.
 
 "least." is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
 
+Watch the [DEMO](http://kamilczujowski.github.io/least/) ;-)
+
 How to install:
 -----------
 
