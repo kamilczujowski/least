@@ -1,26 +1,26 @@
-least.
+least.js
 =====
 
-"least." is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
+"least.js" is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
 
-[Click here to see the demo](http://kamilczujowski.github.io/least/) ;-)
+[Click here to see the demo](http://kamilczujowski.github.io/least/)
 
 How to install:
 -----------
 
 ### one.
 
-Download [least.](http://kamilczujowski.github.io/least/least.zip) or view the Code on [GitHub](https://github.com/kamilczujowski/least)
+Download [least.js](http://kamilczujowski.github.io/least/least.zip) or view the Code on [GitHub](https://github.com/kamilczujowski/least)
 
 ### two.
 
 Insert the following code before end of head-tag.
 
-    <!-- least. CSS-file -->
+    <!-- least.js CSS-file -->
     <link href="css/least.css" rel="stylesheet" />
     <!-- jQuery libary -->
     <script src="http://code.jquery.com/jquery-latest.js" defer="defer"></script>
-    <!-- least. JS-file -->
+    <!-- least.js JS-file -->
     <script src="js/least.js" defer="defer"></script>
     <!-- Lazyload JS-file -->
     <script src="js/jquery.lazyload.js" defer="defer"></script>
