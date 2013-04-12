@@ -15,13 +15,13 @@
 	line-height: @height;
 	font-weight: @weight;
 }
-.Helvetica (@size, @height, @weight: normal) {
+.Helvetica(@size, @height, @weight: normal) {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: @size;
 	line-height: @height;
 	font-weight: @weight;
 }
-.Courier (@size, @height, @weight: normal) {
+.Courier(@size, @height, @weight: normal) {
 	font-family: Courier, Arial, sans-serif;
 	font-size: @size;
 	line-height: @height;
@@ -91,7 +91,7 @@ h2 {
 }
 
 h1 {
-	.Arvo(60px, 60px, 400);
+	.Arvo(60px, 75px, 400);
 	color: @red;
 	
 	text-transform: lowercase;
@@ -110,37 +110,13 @@ header {
 	width: 100%;
 	text-align: center;
 	
-	min-height: 215px;
+	min-height: 150px;
 	
 	p {
 		.Arvo(15px, 25px, 400);
 		color: @red;
 		
 		text-transform: uppercase;
-	}
-	
-	h1 {
-		
-		&:before {
-			content: '';
-			background-image: url('../img/page/logo.png');
-			background-size: 100%;
-			width: 146px;
-			height: 150px;
-			
-			display: inline-block;
-			
-			margin: 0;
-		}
-		
-		@media only screen and 
-		(-o-min-device-pixel-ratio: 5/4),
-		(-webkit-min-device-pixel-ratio: 1.25),
-		(min-resolution: 120dpi)  {
-			&:before  {
-				background-image: url('../img/page/logo@2x.png');
-			}
-		}
 	}
 	
 	figure {
@@ -263,6 +239,7 @@ section {
 	margin-bottom: 30px;
 	
 	background-color: @borderBlack;
+	box-shadow: 0 0 10px;
 	
 	/* @group Fullimage */
 	#fullPreview {
