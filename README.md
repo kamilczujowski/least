@@ -1,5 +1,4 @@
-###least.js
-#####least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
+least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
 
 ##### [Click here to see the demo](http://kamilczujowski.github.io/least/)
 
