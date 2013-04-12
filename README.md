@@ -1,21 +1,15 @@
-least.js
-=====
+###least.js
+#####least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
 
-"least.js" is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
+##### [Click here to see the demo](http://kamilczujowski.github.io/least/)
 
-[Click here to see the demo](http://kamilczujowski.github.io/least/)
+### How to install:
 
-How to install:
------------
+1. Download [least.js](http://kamilczujowski.github.io/least/least.zip) or view the Code on [GitHub](https://github.com/kamilczujowski/least).
 
-### one.
+2. Insert the following code before end of ```</head>```-tag.
 
-Download [least.js](http://kamilczujowski.github.io/least/least.zip) or view the Code on [GitHub](https://github.com/kamilczujowski/least)
-
-### two.
-
-Insert the following code before end of head-tag.
-
+    ```html
     <!-- least.js CSS-file -->
     <link href="css/least.css" rel="stylesheet" />
     <!-- jQuery libary -->
@@ -24,11 +18,11 @@ Insert the following code before end of head-tag.
     <script src="js/least.js" defer="defer"></script>
     <!-- Lazyload JS-file -->
     <script src="js/jquery.lazyload.js" defer="defer"></script>
+    ```
 
-### three.
+3. Insert the following code right after the ```<body>```-tag.
 
-Insert the following code right after the body-tag.
-
+    ```html
     <ul id="gallery">
         <li id="fullPreview"></li>
         
@@ -59,6 +53,7 @@ Insert the following code right after the body-tag.
             </div>
         </li>
     </ul>
+    ```
 
 ### done.
 
