@@ -1,9 +1,9 @@
 /**
 *** least.
 *** Author: Kamil Czujowski, Sergej Müller
-*** Version: 1.0
+*** Version: 1.1
 *** Made in ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
-*** https://github.com/kamilczujowski, http://wpcoder.de
+*** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
 
 
@@ -53,6 +53,7 @@ $(function() {
 			/* Same Image */
 			if ( previewImg.length && path === previewImg.attr('src') ) {
 				preview.slideToggle('slow');
+				
 				return;
 			}
 

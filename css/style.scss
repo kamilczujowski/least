@@ -1,56 +1,82 @@
-/* @group LESS */
+/**
+*** least.
+*** Author: Kamil Czujowski, Sergej Müller
+*** Version: 1.1
+*** Made in ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+*** https://twitter.com/kamilczujowski, http://wpcoder.de
+**/
 
+/* @group SCSS */
 /* FONT */	 
 @import url(http://fonts.googleapis.com/css?family=Arvo);
-
-.Georgia(@size, @height, @weight: normal) {
-	font-family: Georgia, Arial, sans-serif;
-	font-size: @size;
-	line-height: @height;
-	font-weight: @weight;
-}
-.Arvo(@size, @height, @weight: normal) {
-	font-family: Arvo, Arial, sans-serif;
-	font-size: @size;
-	line-height: @height;
-	font-weight: @weight;
-}
-.Helvetica(@size, @height, @weight: normal) {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: @size;
-	line-height: @height;
-	font-weight: @weight;
-}
-.Courier(@size, @height, @weight: normal) {
-	font-family: Courier, Arial, sans-serif;
-	font-size: @size;
-	line-height: @height;
-	font-weight: @weight;
-}
-/* @group Colors */
-@black: #000;
-@white: #fff;
-@red: #e94439;
-@codeBlue: #53a0cd;
-@whiteLight: #fafafa;
-
-@borderWhite: #FFF;
-@borderBlack: #333;
-
-/* @end */
-
-/* @group Effects */
-
-.transition(...) {
-	transition: @arguments;
-	-o-transition: @arguments;
-	-ms-transition: @arguments;
-	-moz-transition: @arguments;
-	-webkit-transition: @arguments;
-}
 /* @end */
 
 /* @group Mixins */
+
+@mixin Georgia($size, $height, $weight: normal) {
+	font-family: Georgia, Arial, sans-serif;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+@mixin Arvo($size, $height, $weight: normal) {
+	font-family: Arvo, Arial, sans-serif;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+
+@mixin Raleway($size, $height, $weight: normal) {
+	font-family: Arvo, Arial, sans-serif;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+
+@mixin Helvetica($size, $height, $weight: normal) {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+@mixin Courier($size, $height, $weight: normal) {
+	font-family: Courier, Arial, sans-serif;
+	font-size: $size;
+	line-height: $height;
+	font-weight: $weight;
+}
+
+@mixin transition ($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin rotate($arguments) {
+    -webkit-transform: $arguments;
+    -moz-transform: $arguments;
+    -ms-transform: $arguments;
+    -o-transform: $arguments;
+    transform: $arguments;
+}
+
+/* @end */
+
+/* @group Colors */
+$black: #000;
+$white: #fff;
+$red: #e94439;
+$codeBlue: #53a0cd;
+$whiteLight: #fafafa;
+
+$borderWhite: #FFF;
+$borderBlack: #333;
+
+/* @end */
+
+/* @group Default */
 * {
 	border: 0;
 	margin: 0;
@@ -74,32 +100,32 @@ ul {
 }
 
 a {
-	color: @red;
+	color: $red;
 	text-decoration: none;
 	
 	&:hover {
-		color: lighten(@red, 10%);
+		color: lighten($red, 10%);
 		text-decoration: underline;
 	}
 }
 
 h2 {
-	.Arvo(30px, 25px, 500);
+	@include Arvo(30px, 25px, 500);
 	text-transform: uppercase;
-	color: @white;
+	color: $white;
 	letter-spacing: 1px;
 }
 
 h1 {
-	.Arvo(60px, 75px, 400);
-	color: @red;
+	@include Arvo(60px, 75px, 400);
+	color: $red;
 	
 	text-transform: lowercase;
 }
 
 p {
-	.Georgia(15px, 15px, 100);
-	color: @white;
+	@include Georgia(15px, 15px, 100);
+	color: $white;
 }
 
 /* @end */
@@ -113,15 +139,15 @@ header {
 	min-height: 150px;
 	
 	p {
-		.Arvo(15px, 25px, 400);
-		color: @red;
+		@include Arvo(15px, 25px, 400);
+		color: $red;
 		
 		text-transform: uppercase;
 	}
 	
 	figure {
 		width: 250px;
-		background-color: @red;
+		background-color: $red;
 		
 		box-shadow: 1px 1px 5px;
 		
@@ -132,27 +158,22 @@ header {
 		overflow: hidden;
 		
 		padding: 5px 0;
-		
-		transform:rotate(45deg);
-		-ms-transform:rotate(45deg);
-		-moz-transform:rotate(45deg);
-		-webkit-transform:rotate(45deg);
-		-o-transform:rotate(45deg);
-		
-		.transition(background-color, 0.5s);
-		
+
+		@include rotate(rotate(45deg));
+		@include transition(background-color, 0.5s, linear);
+
 		a {
-			.Helvetica(14px, 18px, 400);
-			color: @white;
+			@include Helvetica(14px, 18px, 400);
+			color: $white;
 			
 			&:hover {
-				color: @white;
+				color: $white;
 				text-decoration: none;
 			}
 		}
 		
 		&:hover {
-			background-color: fadeout(@red, 25%);
+			background-color: fadeout($red, 25%);
 		}
 	}
 }
@@ -172,23 +193,23 @@ article {
 	}
 	
 	h2 {
-		.Arvo(20px, 25px, 400);
-		color: @red;
+		@include Arvo(20px, 25px, 400);
+		color: $red;
 		
 		text-transform: uppercase;
 	}
 	
 	h3 {
-		.Arvo(15px, 25px, 400);
-		color: @red;
+		@include Arvo(15px, 25px, 400);
+		color: $red;
 		text-transform: uppercase;
 		
 		margin: 15px 0 0 0;
 	}
 	
 	p {
-		.Helvetica(14px, 18px, 300);
-		color: @black;
+		@include Helvetica(14px, 18px, 300);
+		color: $black;
 		display: inline-block;
 		margin: 15px 0 0;
 		
@@ -196,11 +217,11 @@ article {
 	}
 	
 	a#button {
-		background-color: @red;
+		background-color: $red;
 		
 		max-width: 150px;
 		
-		color: @white;
+		color: $white;
 		
 		display: block;
 		margin: 20px auto 0 auto;
@@ -208,12 +229,28 @@ article {
 		padding: 15px 30px;
 		border-radius: 8px;
 		
-		.Helvetica(20px, 20px, 300);
-		.transition(background-color, 0.5s);
+		@include Helvetica(20px, 20px, 300);
+		@include transition(background-color, 0.5s, linear);
 		
 		&:hover {
 			text-decoration: none;
-			background-color: fadeout(@red, 25%);
+			background-color: fadeout($red, 25%);
+		}
+	}
+
+	a#twitter {
+
+		@include Arvo(30px, 45px, 400);
+		color: $black;
+
+		position: relative;
+		top: 30px;
+
+		&:before {
+			content: '#';
+			display: inline-block;
+			color: $red;
+			margin: 0 5px 0 0;
 		}
 	}
 	
@@ -238,14 +275,14 @@ section {
 	padding: 30px 0;
 	margin-bottom: 30px;
 	
-	background-color: @borderBlack;
+	background-color: $borderBlack;
 	box-shadow: 0 0 10px;
 	
 	/* @group Fullimage */
 	#fullPreview {
-		background-color: @borderBlack;
-		border-top: 2px solid @borderBlack;
-		border-bottom: 2px solid @borderBlack;
+		background-color: $borderBlack;
+		border-top: 2px solid $borderBlack;
+		border-bottom: 2px solid $borderBlack;
 		padding: 50px 0 30px 0;
 		
 		display: none;
@@ -259,8 +296,8 @@ section {
 		}
 		
 		.fullCaption {
-			.Helvetica(13px, 15px, 300);
-			color: @white;
+			@include Helvetica(13px, 15px, 300);
+			color: $white;
 			margin: 15px auto 0 auto;
 		}
 		
@@ -288,14 +325,16 @@ section {
 		position: relative;
 		
 			&:hover .overLayer {
-				.transition(opacity, 0.3s linear);
+				@include transition(opacity, 0.3s, linear);
+
 				opacity: 0.6;
 				display: block;
-				background: lighten(@black, 50%);
+				background: lighten($black, 50%);
 			}
 			
 			&:hover .infoLayer {
-				.transition(opacity, 0.3s linear);
+				@include transition(opacity, 0.3s, linear);
+
 				opacity: 1;
 				display: block;
 			}
@@ -318,7 +357,8 @@ section {
 		/* @group Over */
 		.overLayer,
 		.infoLayer {
-			.transition(opacity, 0.3s linear);
+			@include transition(opacity, 0.3s, linear);
+
 			width: 240px;
 			height: 150px;
 		    position: absolute;
@@ -338,7 +378,7 @@ section {
 					padding: 0 0 5px 0;
 						
 					&:first-child {
-						border-bottom: 2px @borderWhite solid;
+						border-bottom: 2px $borderWhite solid;
 					}
 					
 					&:last-child {
@@ -372,28 +412,29 @@ footer {
 	margin: 50px 0 0 0;
 	
 	p {
-		.Helvetica(14px, 22px, 300);
-		color: @black;
-		display: ;
+		@include Helvetica(14px, 22px, 300);
+		color: $black;
+		display: block;
 	}
 	
 	span {
 		display: inline-block;
-		color: @red;
+		color: $red;
 		font-size: 20px;
 		margin: 0 3px;
-		.transition(color, 0.5s);
+
+		@include transition(color, 0.5s, linear);
 		
 		&:hover {
-			color: lighten(@red, 10%);
+			color: lighten($red, 10%);
 		}
 	}
 	
 	a {
-		color: @red;
+		color: $red;
 		
 		&:hover {
-			color: lighten(@red, 10%);
+			color: lighten($red, 10%);
 			text-decoration: underline;
 		}
 	}
