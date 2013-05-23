@@ -5,19 +5,9 @@
         <meta charset="utf-8" />
         <title>least.js - Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="css/style.min.css" rel="stylesheet" />
-        <link href="css/prism.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <header>
-            <h1>
-                least.js
-            </h1>
-            <p>
-                Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
-            </p>
-        </header>
-        
         <!-- Gallery -->
         <section>
             <ul id="gallery">
@@ -546,141 +536,16 @@
             </ul>
         </section>
         <!-- / Gallery -->
-        
-        <article>
-            <h2>
-                How to install
-            </h2>
-        </article>
-        
-        <article>
-        <!-- 1 -->
-            <h3>
-                One.
-            </h3>
-            
-            <p>
-                Download <strong>least.js</strong> or view the Code on <a href="https://github.com/kamilczujowski/least">GitHub</a>
-            </p>
-            
-            <a href="least.zip" id="button">
-                Download
-            </a>
-        </article>
-        
-        <article>
-        <!-- 2 -->
-            <h3>
-                Two.
-            </h3>
-            
-            <p>
-                Insert the following code before end of <strong>&lt;/head></strong>-tag.
-            </p>
-<pre class="language-markup" ><code class="language-markup">&lt;!-- least.js CSS-file -->
-&lt;link href="css/least.min.css" rel="stylesheet" />
-&lt;!-- jQuery libary -->
-&lt;script src="http://code.jquery.com/jquery-latest.js" defer="defer">&lt;/script>
-&lt;!-- least.js JS-file -->
-&lt;script src="js/least.min.js" defer="defer">&lt;/script>
-&lt;!-- Lazyload JS-file -->
-&lt;script src="js/jquery.lazyload.js" defer="defer">&lt;/script></code></pre>
-        </article>
-        
-        <article>
-            <!-- 3 -->
-            <h3>
-                three.
-            </h3>
-            
-            <p>
-                Insert the following code right after the <strong>&lt;body></strong>-tag.
-            </p>
-<pre class="language-markup">
-<code class="language-markup">&lt;section>
-    &lt;ul id="gallery">
-        &lt;li id="fullPreview">&lt;/li>
-        
-        &lt;li>
-            &lt;a href="img/full/full_1.jpg">&lt;/a>
-            &lt;img data-original="img/thumb/thumb_1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
-            
-            &lt;div class="overLayer">&lt;/div>
-            &lt;div class="infoLayer">
-                &lt;ul>
-                    &lt;li>
-                        &lt;h2>
-                            Ocean
-                        &lt;/h2>
-                    &lt;/li>
-                    &lt;li>
-                        &lt;p>
-                            View Picture
-                        &lt;/p>
-                    &lt;/li>
-                &lt;/ul>
-            &lt;/div>
-            
-            &lt;div class="projectInfo">
-                &lt;strong>
-                    Monday, 14th April 2093:
-                &lt;/strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            &lt;/div>
-        &lt;/li>
-    &lt;/ul>
-&lt;/section></code>
-</pre>
-        </article>
-        
-        <article>
-            <h2>
-                Done.
-            </h2>
-            
-            <figure>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kamilczujowski.github.io/least/" data-lang="de" data-hashtags="leastjs">Tweet</a>
-                
-                <iframe src="http://ghbtns.com/github-btn.html?user=kamilczujowski&repo=least&type=fork&count=false"
-                  allowtransparency="true" frameborder="0" scrolling="0" width="70" height="20"></iframe>
-            </figure>
 
-            <a href="http://twitter.com/leastjs" id="twitter">leastjs</a>
-        </article>
-        
-        
-        
-        <footer>
-            <p>
-                Made in <span>&hearts;</span> by <a href="https://twitter.com/kamilczujowski" target="_blank">Kamil Czujowski</a> and <a href="http://wpcoder.de" target="_blank">Sergej Müller</a>
-            </p>
-            <p>
-                &copy; 2013 Hamburg, Germany
-            </p>
-            
-            <p>
-                Version: 1.1
-            </p>
-        </footer>
-        <script src="js/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         <script src="js/jquery.lazyload.js"></script>
-        
-        <script src="js/least.min.js"></script>
-        <script src="js/prism.js"></script>
-        
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        
-        <script type="text/javascript">
-        
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-16040332-5']);
-          _gaq.push(['_trackPageview']);
-        
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        
+        <script src="js/least-ck.js"></script>
+        <script>
+        $('#gallery').least({
+            'random':false,
+            'lazyload':true
+        });
         </script>
+
     </body>
 </html>
