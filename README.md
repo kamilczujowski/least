@@ -17,6 +17,9 @@ least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
     <script src="js/least.min.js" defer="defer"></script>
     <!-- Lazyload JS-file -->
     <script src="js/jquery.lazyload.js" defer="defer"></script>
+    <script>
+    $('#gallery').least();
+    </script>
     ```
 
 3. Insert the following code right after the ```<body>```-tag.
@@ -55,6 +58,12 @@ least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
         </ul>
     </section>
     ```
+
+### Options:
+```
+'random': true/false (default to true)
+'lazyload': true/false  (default to false)
+```
 
 ### done.
 
