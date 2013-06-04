@@ -48,7 +48,7 @@ $(function() {
 				path = $$.attr('href'),
 				preview = $('#fullPreview'),
 				previewImg = preview.children('img'),
-				caption = $$.nextAll('.projectInfo').html() || '';
+				caption = $$.nextAll('.projectInfo').html() || '';
 
 			/* Same Image */
 			if ( previewImg.length && path === previewImg.attr('src') ) {
