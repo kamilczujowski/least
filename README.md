@@ -73,16 +73,16 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 ## Changelog
 
-**V.1.2 (06. June 2013)**
-» Transformation to a jQuery Plugin by Jorge Epuñan - @csslab
-» Adding Changelog
+**V.1.2 (06. June 2013)**<br /> 
+» Transformation to a jQuery Plugin by Jorge Epuñan - @csslab<br /> 
+» Adding Changelog<br /> 
 » Some small Bugfixes
 
-**V.1.1 (30. April 2013)**
-» Changing file ending from .less to .scss
-» Smaler Download
-» Cleanup .js and .scss files
-» Adding ReadMe file
+**V.1.1 (30. April 2013)**<br /> 
+» Changing file ending from .less to .scss<br /> 
+» Smaler Download<br /> 
+» Cleanup .js and .scss files<br /> 
+» Adding ReadMe file<br /> 
 » Some small Bugfixes
 
 ## Done!
@@ -93,5 +93,5 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 - simple integration
 
 Made in ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
-© 2013 Hamburg, Germany
+<br /> © 2013 Hamburg, Germany<br /> 
 Version: 1.2
