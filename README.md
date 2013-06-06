@@ -58,7 +58,7 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 4. Now you need to call the plugin with your Gallery ID (default - #gallery).
 
-    ```html
+    ```javascript
     $(document).ready(function(){
         $('#gallery').least();
     });
@@ -66,7 +66,7 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 5. You can use the following default options:
     
-    ```html
+    ```javascript
     'random': true/false (default to true)
     'lazyload': true/false  (default to true)
     ```
