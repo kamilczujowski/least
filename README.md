@@ -1,8 +1,8 @@
-least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
+least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad
 
 ##### [Click here to see the demo](http://kamilczujowski.github.io/least/)
 
-### How to install:
+## How to install:
 
 1. Download [least.js](http://kamilczujowski.github.io/least/least.zip) or view the Code on [GitHub](https://github.com/kamilczujowski/least).
 
@@ -56,14 +56,42 @@ least.js is a Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
     </section>
     ```
 
-### done.
+4. Now you need to call the plugin with your Gallery ID (default - #gallery).
 
-### ToDos for Version 2.0
+    ```html
+    $(document).ready(function(){
+        $('#gallery').least();
+    });
+    ```
+
+5. You can use the following default options:
+    
+    ```html
+    'random': true/false (default to true)
+    'lazyload': true/false  (default to true)
+    ```
+
+## Changelog
+
+**V.1.2 (06. June 2013)**
+» Transformation to a jQuery Plugin by Jorge Epuñan - @csslab
+» Adding Changelog
+» Some small Bugfixes
+
+**V.1.1 (30. April 2013)**
+» Changing file ending from .less to .scss
+» Smaler Download
+» Cleanup .js and .scss files
+» Adding ReadMe file
+» Some small Bugfixes
+
+## Done!
+
+## ToDos for Version 2.0
 - slider function
 - images loader
 - simple integration
-- enable and disable random pictures
 
 Made in ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
 © 2013 Hamburg, Germany
-Version: 1.1
+Version: 1.2

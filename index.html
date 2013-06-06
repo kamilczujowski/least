@@ -2,9 +2,9 @@
 
 <html>
     <head>
-        <title>least.js - Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad</title>
+        <title>least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad</title>
 
-        <meta name="description" content="least.js is a Random & Responsive HTML 5, CSS3 Gallery with LazyLoad">
+        <meta name="description" content="least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -17,7 +17,7 @@
                 least.js
             </h1>
             <p>
-                Random &amp; Responsive HTML 5, CSS3 Gallery with LazyLoad
+                Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad 
             </p>
         </header>
         
@@ -563,10 +563,10 @@
             </h3>
             
             <p>
-                Download <strong>least.js</strong> or view the Code on <a href="https://github.com/kamilczujowski/least">GitHub</a>
+                Download <strong>least.js</strong> or view the Code on <a href="https://github.com/kamilczujowski/least" onclick="_gaq.push(['_trackPageview', 'https://github.com/kamilczujowski/least']);" target="_blank">GitHub</a>
             </p>
             
-            <a href="least.zip" id="button">
+            <a href="least.zip" id="button" onclick="_gaq.push(['_trackPageview', 'http://kamilczujowski.github.io/least/least.zip']);">
                 Download
             </a>
         </article>
@@ -634,6 +634,65 @@
 &lt;/section></code>
 </pre>
         </article>
+
+        <article>
+            <!-- 4 -->
+
+            <h3>
+                four.
+            </h3>
+
+            <p>
+                Now you need to call the plugin with your Gallery ID (default - #gallery).
+            </p>
+                <pre class="language-javascript">
+<code class="language-javascript">$(document).ready(function(){
+    $('#gallery').least();
+});</code>
+</pre>
+        </article>
+
+        <article>
+
+            <h3>
+                options:
+            </h3>
+            <p>
+                You can use the following default options:
+            </p>
+
+                <pre class="language-javascript">
+<code class="language-javascript">'random': true/false (default to true)
+'lazyload': true/false  (default to true)</code>
+</pre>
+        </article>
+
+        <article>
+
+            <h3>
+                changelog:
+            </h3>
+            <!-- V.1.2 -->
+            <p style="text-align: left;">
+                <em>V.1.2 (06. June 2013)</em>
+            </p>
+            <pre class="language-markup">
+<code class="language-markup">» Transformation to a jQuery Plugin by Jorge Epuñan - @csslab
+» Adding Changelog
+» Some small Bugfixes</code>
+</pre>
+            <!-- V.1.1 -->
+            <p style="text-align: left;">
+                <em>V.1.1 (30. April 2013)</em>
+            </p>
+            <pre class="language-markup">
+<code class="language-markup">» Changing file ending from .less to .scss
+» Smaler Download
+» Cleanup .js and .scss files
+» Adding ReadMe file
+» Some small Bugfixes</code>
+</pre>
+        </article>
         
         <article>
             <h2>
@@ -647,8 +706,6 @@
                   allowtransparency="true" frameborder="0" scrolling="0" width="70" height="20"></iframe>
             </figure>
 
-            <a href="http://twitter.com/leastjs" id="twitter">leastjs</a>
-            
             <div id="adsense">
                 <script type="text/javascript">
                     <!--
@@ -671,14 +728,18 @@
         
         <footer>
             <p>
-                Made in <span>&hearts;</span> by <a href="https://twitter.com/kamilczujowski" target="_blank">Kamil Czujowski</a> and <a href="http://wpcoder.de" target="_blank">Sergej Müller</a>
+                Made in <span>&hearts;</span> by <a href="https://twitter.com/kamilczujowski" target="_blank" onclick="_gaq.push(['_trackPageview', 'https://twitter.com/kamilczujowski']);">Kamil Czujowski</a> and <a href="http://wpcoder.de" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://wpcoder.de']);">Sergej Müller</a>
             </p>
             <p>
                 &copy; 2013 Hamburg, Germany
             </p>
             
             <p>
-                Version: 1.1
+                Version: 1.2
+            </p>
+            <br />
+            <p>
+                <small>Photos Credits: Google.com</small>
             </p>
         </footer>
         <script src="js/jquery.min.js"></script>
@@ -686,6 +747,12 @@
         
         <script src="js/least.min.js"></script>
         <script src="js/prism.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $('#gallery').least();
+        });
+        </script>
         
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         
