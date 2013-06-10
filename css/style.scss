@@ -26,13 +26,6 @@
 	font-weight: $weight;
 }
 
-@mixin Raleway($size, $height, $weight: normal) {
-	font-family: Arvo, Arial, sans-serif;
-	font-size: $size;
-	line-height: $height;
-	font-weight: $weight;
-}
-
 @mixin Helvetica($size, $height, $weight: normal) {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: $size;
@@ -127,7 +120,20 @@ p {
 	@include Georgia(15px, 15px, 100);
 	color: $white;
 }
-
+/* @group Placeholder */
+::-webkit-input-placeholder {
+	color: lighten($black, 50%);
+}
+::-moz-placeholder {
+	color: lighten($black, 50%);
+}
+:-ms-input-placeholder {
+	color: lighten($black, 50%);
+}
+input:-moz-placeholder {
+	color: lighten($black, 50%);
+}
+/* @end */
 /* @end */
 
 /* @group Header */
@@ -215,7 +221,7 @@ article {
 		
 		max-width: 650px;
 	}
-	
+	input[type=submit],
 	a#button {
 		background-color: $red;
 		
@@ -234,23 +240,7 @@ article {
 		
 		&:hover {
 			text-decoration: none;
-			background-color: fadeout($red, 25%);
-		}
-	}
-
-	a#twitter {
-
-		@include Arvo(30px, 45px, 400);
-		color: $black;
-
-		position: relative;
-		top: 30px;
-
-		&:before {
-			content: '#';
-			display: inline-block;
-			color: $red;
-			margin: 0 5px 0 0;
+			background-color: lighten($red, 10%);
 		}
 	}
 
@@ -258,6 +248,34 @@ article {
 		display: block;
 
 		margin: 55px auto 0 auto;
+	}
+
+	#mc_embed_signup {
+		max-width:650px;
+		margin: 40px auto 50px auto;
+
+		label {
+			@include Arvo(20px, 25px, 400);
+			color: $red;
+			text-transform: uppercase;
+		}
+
+		input {
+			border: 1px solid #f5f2f0;
+			width: 325px;
+			padding: 10px 5px;
+
+			margin: 10px 0;
+
+			color: $black;
+
+			&[type=submit] {
+				margin: 10px auto;
+				color: $white;
+
+				cursor: pointer;
+			}
+		}
 	}
 	
 	strong {
@@ -270,144 +288,6 @@ article {
 	}
 }
 /* @end */
-
-/* @group Main */
-
-section {
-	min-width:100%;
-	width: 100%;
-	min-height:100%;
-	text-align: center;
-	padding: 30px 0;
-	margin-bottom: 30px;
-	
-	background-color: $borderBlack;
-	box-shadow: 0 0 10px;
-	
-	/* @group Fullimage */
-	#fullPreview {
-		background-color: $borderBlack;
-		border-top: 2px solid $borderBlack;
-		border-bottom: 2px solid $borderBlack;
-		padding: 50px 0 30px 0;
-		
-		display: none;
-		
-		img,
-		.fullCaption {
-		    max-width:960px;
-		    width:100%;
-		    margin:0 auto;
-		    display:block;
-		}
-		
-		.fullCaption {
-			@include Helvetica(13px, 15px, 300);
-			color: $white;
-			margin: 15px auto 0 auto;
-		}
-		
-		figure {
-			background-image: url('../img/effects/close.png');
-			background-size: 100%;
-			
-			width: 30px;
-			height: 30px;
-			
-			position: absolute;
-			top: 10px;
-			right: 20px;
-			
-			cursor: pointer;
-		}
-	}
-	
-	/* @end */
-	
-	/* @group Smallimages */
-	li {
-		display: inline-block;
-		vertical-align: top;
-		position: relative;
-		
-			&:hover .overLayer {
-				@include transition(opacity, 0.3s, linear);
-
-				opacity: 0.6;
-				display: block;
-				background: lighten($black, 50%);
-			}
-			
-			&:hover .infoLayer {
-				@include transition(opacity, 0.3s, linear);
-
-				opacity: 1;
-				display: block;
-			}
-		
-		a {
-			display: block;
-			width: 240px;
-			height: 150px;
-			position: absolute;
-			top: 10px;
-			left: 0;
-			z-index: 6;
-		}
-		
-		img {
-			border: none;
-			margin: 10px 10px 0 0;
-		}
-		
-		/* @group Over */
-		.overLayer,
-		.infoLayer {
-			@include transition(opacity, 0.3s, linear);
-
-			width: 240px;
-			height: 150px;
-		    position: absolute;
-		    text-align: center;
-		    opacity: 0;
-		    top: 10px;
-		    left: 0;
-		    z-index: 4;
-		    
-		    ul {
-				padding: 50px 0 0 0;
-					
-				li {
-					display:block;
-					margin: 0 auto;
-					width: 200px;
-					padding: 0 0 5px 0;
-						
-					&:first-child {
-						border-bottom: 2px $borderWhite solid;
-					}
-					
-					&:last-child {
-						padding: 5px 0 0 0;
-						text-transform: lowercase;
-					}
-					
-					h2 {
-						font-size: 25px;
-					}
-				}
-			}
-		/* @end */	
-		}
-		/* @group Description */
-		.projectInfo {
-			display: none;
-		}
-		/* @end *
-	/* @end */
-	}
-}
-/* end */
 
 /* @group Footer */
 footer {
