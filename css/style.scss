@@ -197,6 +197,13 @@ article {
 	&:first-child {
 		margin: 0;
 	}
+
+	hr {
+		max-width: 674px;
+		border-top: 1px solid darken(#f5f2f0, 5%);
+
+		margin: 30px auto 0 auto;
+	}
 	
 	h2 {
 		@include Arvo(20px, 25px, 400);
