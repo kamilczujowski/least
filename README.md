@@ -92,6 +92,6 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 - images loader
 - simple integration
 
-Made in ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
+Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
 <br /> © 2013 Hamburg, Germany<br /> 
 Version: 1.2

@@ -3,7 +3,7 @@
 *** Author: Kamil Czujowski, Sergej Müller
 *** Transformed to a jQuery Plugin by Jorge Epuñan - @csslab
 *** Version: 1.2
-*** Made in ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
 *** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
 
