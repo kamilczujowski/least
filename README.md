@@ -27,8 +27,8 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
             <li id="fullPreview"></li>
             
             <li>
-                <a href="img/full/full_1.jpg"></a>
-                <img data-original="img/thumb/thumb_1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
+                <a href="img/full/1.jpg"></a>
+                <img data-original="img/thumb/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Ocean" />
             
                 <div class="overLayer"></div>
                 <div class="infoLayer">
@@ -48,7 +48,7 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
             
                 <div class="projectInfo">
                     <strong>
-                        Monday, 14th April 2093:
+                       Day, Month, Year:
                     </strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </div>
             </li>
@@ -69,9 +69,14 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
     ```javascript
     'random': true/false (default to true)
     'lazyload': true/false  (default to true)
+    'scrollToGallery': true/false (default to true)
     ```
 
 ## Changelog
+
+**V.1.3 (19. June 2013)**<br /> 
+» Added a new option "scrollToGallery"<br /> 
+» New pictures
 
 **V.1.2 (06. June 2013)**<br /> 
 » Transformation to a jQuery Plugin by Jorge Epuñan - [@csslab](https://twitter.com/csslab)<br /> 
@@ -87,11 +92,11 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 ## Done!
 
-## ToDos for Version 2.0
+## ToDos for the next version
 - slider function
 - images loader
 - simple integration
 
 Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
 <br /> © 2013 Hamburg, Germany<br /> 
-Version: 1.2
+Version: 1.3

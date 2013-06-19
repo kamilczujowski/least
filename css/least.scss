@@ -1,18 +1,14 @@
 /**
 *** least.
 *** Author: Kamil Czujowski, Sergej Müller
-*** Version: 1.2
+*** Version: 1.3
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
 *** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
 
-/* @group SCSS */
-/* FONT */   
 @import url(http://fonts.googleapis.com/css?family=Arvo);
-/* @end */
 
 /* @group Mixins */
-
 @mixin Georgia($size, $height, $weight: normal) {
     font-family: Georgia, Arial, sans-serif;
     font-size: $size;
@@ -54,7 +50,6 @@
     -o-transform: $arguments;
     transform: $arguments;
 }
-
 /* @end */
 
 /* @group Colors */
@@ -66,7 +61,6 @@ $whiteLight: #fafafa;
 
 $borderWhite: #FFF;
 $borderBlack: #333;
-
 /* @end */
 
 /* @group Default */
@@ -228,5 +222,5 @@ section {
         /* @end *
     /* @end */
     }
-}
+} 
 /* end */

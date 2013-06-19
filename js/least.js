@@ -2,7 +2,7 @@
 *** least.
 *** Author: Kamil Czujowski, Sergej Müller
 *** Transformed to a jQuery Plugin by Jorge Epuñan - @csslab
-*** Version: 1.2
+*** Version: 1.3
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
 *** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
@@ -12,7 +12,8 @@
 	$.fn.least = function(options) {
 		var settings = $.extend({
 			'random': true,
-			'lazyload': true
+			'lazyload': true,
+			'scrollToGallery': true
 		}, options);
 
 		return this.each(function() {
@@ -75,12 +76,6 @@
 							caption
 						);
 					}
-					/* Scroll to Top */
-					$('html, body').animate(
-						{ 
-							scrollTop: 0
-						}, 500 
-					);
 				}
 			);
 
@@ -115,6 +110,21 @@
 						})
 						.appendTo(ul);
 				});
+			}
+
+			if(settings.scrollToGallery) {
+				/* Scroll to Top */
+				$(this).find('li a').click(
+					function(e) {
+						e.preventDefault();
+
+						$('html, body').animate(
+							{ 
+								scrollTop: $('#gallery').offset().top
+							}, 500 
+						);
+					}
+				);
 			}
 			
 		
