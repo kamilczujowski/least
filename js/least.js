@@ -2,7 +2,7 @@
 *** least.
 *** Author: Kamil Czujowski, Sergej Müller
 *** Transformed to a jQuery Plugin by Jorge Epuñan - @csslab
-*** Version: 1.3
+*** Version: 1.4
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
 *** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
@@ -21,7 +21,8 @@
 			/* Open Images */
 			function intipreview(object, path, caption) {
 				var close = $('<figure class="close"></figure>'),
-					img = $('<img src="' + path + '"/>');
+					img = $('<img src="' + path + '"/>'),
+					thumb = $('li a');
 
 				img.load(
 					function() {
@@ -30,6 +31,7 @@
 							.prepend(img)
 							.append(close)
 							.slideDown('slow');
+							thumb.removeClass('spinner');
 					}
 				);
 						
@@ -56,6 +58,7 @@
 						
 						return;
 					}
+
 					/* Other Image */
 					if ( previewImg.length ) {
 						preview.slideUp(
@@ -68,6 +71,7 @@
 								);
 							}
 						);
+
 					/* First Image */
 					} else {
 						intipreview(
@@ -76,6 +80,9 @@
 							caption
 						);
 					}
+
+					/* Add spinner */
+					$(this).addClass('spinner');
 				}
 			);
 
