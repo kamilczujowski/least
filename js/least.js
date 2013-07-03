@@ -2,13 +2,13 @@
 *** least.
 *** Author: Kamil Czujowski, Sergej Müller
 *** Transformed to a jQuery Plugin by Jorge Epuñan - @csslab
-*** Version: 1.4
+*** Version: 1.5
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
 *** https://twitter.com/kamilczujowski, http://wpcoder.de
 **/
 
 
-;(function($){ 
+(function($){ 
 	$.fn.least = function(options) {
 		var settings = $.extend({
 			'random': true,
@@ -85,22 +85,6 @@
 					$(this).addClass('spinner');
 				}
 			);
-
-			if( settings.lazyload && $.fn.lazyload ) {
-				/* Effect's */
-				$("img").lazyload({
-					effect: "fadeIn"
-				});
-			} else {
-				$("img").each(
-					function() {
-						$(this).attr(
-							'src',
-							$(this).data('original')
-						);
-					}
-				);
-			}
 			
 			if(settings.random) {
 				/* Random Images - looked up from jquery forum */
@@ -117,6 +101,22 @@
 						})
 						.appendTo(ul);
 				});
+			}
+
+			if( settings.lazyload && $.fn.lazyload ) {
+				/* Effect's */
+				$("img").lazyload({
+					effect: "fadeIn"
+				});
+			} else {
+				$("img").each(
+					function() {
+						$(this).attr(
+							'src',
+							$(this).data('original')
+						);
+					}
+				);
 			}
 
 			if(settings.scrollToGallery) {

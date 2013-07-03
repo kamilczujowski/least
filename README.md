@@ -16,7 +16,7 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
     <!-- least.js JS-file -->
     <script src="js/least.min.js" defer="defer"></script>
     <!-- Lazyload JS-file -->
-    <script src="js/jquery.lazyload.js" defer="defer"></script>
+    <script src="js/jquery.lazyload.min.js" defer="defer"></script>
     ```
 
 3. Insert the following code right after the ```<body>```-tag.
@@ -74,6 +74,11 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 ## Changelog
 
+**V.1.5 (03. July 2013)**<br /> 
+» Newtest LazyLoad library (1.8.4)<br /> 
+» Newtest jQuery library (2.0.1)<br /> 
+» LazyLoad loading bugfix
+
 **V.1.4 (26. June 2013)**<br /> 
 » Added image loader
 
@@ -101,4 +106,4 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 
 Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
 <br /> © 2013 Hamburg, Germany<br /> 
-Version: 1.4
+Version: 1.5
