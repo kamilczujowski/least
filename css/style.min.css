@@ -1,1 +1,245 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo);*{border:0;margin:0;padding:0;outline:0}html{background-color:#fdfcfb}body{height:100%;min-height:100%;position:relative;margin:50px auto 20px auto}ul{list-style:none}a{color:#e94439;text-decoration:none}a:hover{color:#ee6f67;text-decoration:underline}h2{font-family:Arvo, Arial, sans-serif;font-size:30px;line-height:25px;font-weight:500;text-transform:uppercase;color:#fff;letter-spacing:1px}h1{font-family:Arvo, Arial, sans-serif;font-size:60px;line-height:75px;font-weight:400;color:#e94439;text-transform:lowercase}p{font-family:Georgia, Arial, sans-serif;font-size:15px;line-height:15px;font-weight:100;color:#fff}::-webkit-input-placeholder{color:gray}::-moz-placeholder{color:gray}:-ms-input-placeholder{color:gray}input:-moz-placeholder{color:gray}header{min-width:100%;width:100%;text-align:center;min-height:150px}header p{font-family:Arvo, Arial, sans-serif;font-size:15px;line-height:25px;font-weight:400;color:#e94439;text-transform:uppercase}header figure{width:250px;background-color:#e94439;box-shadow:1px 1px 5px;position:absolute;right:-60px;top:0;overflow:hidden;padding:5px 0;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:background-color 0.5s linear;-moz-transition:background-color 0.5s linear;-ms-transition:background-color 0.5s linear;-o-transition:background-color 0.5s linear;transition:background-color 0.5s linear}header figure a{font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:18px;font-weight:400;color:#fff}header figure a:hover{color:#fff;text-decoration:none}header figure:hover{background-color:fadeout(#e94439, 25%)}article{width:100%;min-width:100%;text-align:center;margin:0 0 30px 0}article:first-child{margin:0}article hr{max-width:674px;border-top:1px solid #ebe5e1;margin:30px auto 0 auto}article h2{font-family:Arvo, Arial, sans-serif;font-size:20px;line-height:25px;font-weight:400;color:#e94439;text-transform:uppercase}article h3{font-family:Arvo, Arial, sans-serif;font-size:15px;line-height:25px;font-weight:400;color:#e94439;text-transform:uppercase;margin:15px 0 0 0}article p{font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:18px;font-weight:300;color:#000;display:inline-block;margin:15px 0 0;max-width:650px}article input[type=submit],article a#button{background-color:#e94439;max-width:150px;color:#fff;display:block;margin:20px auto 0 auto;padding:15px 30px;border-radius:8px;font-family:Helvetica, Arial, sans-serif;font-size:20px;line-height:20px;font-weight:300;-webkit-transition:background-color 0.5s linear;-moz-transition:background-color 0.5s linear;-ms-transition:background-color 0.5s linear;-o-transition:background-color 0.5s linear;transition:background-color 0.5s linear}article input[type=submit]:hover,article a#button:hover{text-decoration:none;background-color:#ee6f67}article #adsense{display:block;margin:55px auto 0 auto}article #mc_embed_signup{max-width:650px;margin:40px auto 50px auto}article #mc_embed_signup label{font-family:Arvo, Arial, sans-serif;font-size:20px;line-height:25px;font-weight:400;color:#e94439;text-transform:uppercase}article #mc_embed_signup input{border:1px solid #f5f2f0;width:325px;padding:10px 5px;margin:10px 0;color:#000}article #mc_embed_signup input[type=submit]{margin:10px auto;color:#fff;cursor:pointer}article strong{font-weight:600}article figure{max-width:960px;margin:25px auto 0 auto}footer{min-width:100%;width:100%;text-align:center;margin:50px 0 0 0}footer p{font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;font-weight:300;color:#000;display:block}footer span{display:inline-block;color:#e94439;font-size:20px;margin:0 3px;-webkit-transition:color 0.5s linear;-moz-transition:color 0.5s linear;-ms-transition:color 0.5s linear;-o-transition:color 0.5s linear;transition:color 0.5s linear}footer span:hover{color:#ee6f67}footer a{color:#e94439}footer a:hover{color:#ee6f67;text-decoration:underline}
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+/**
+*** least.
+*** Author: Kamil Czujowski, Sergej Müller
+*** Version: 1.5
+*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
+*** https://twitter.com/kamilczujowski, http://wpcoder.de
+**/
+/* @group SCSS */
+/* FONT */
+/* @end */
+/* @group Mixins */
+/* @end */
+/* @group Colors */
+/* @end */
+/* @group Default */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+html {
+  background-color: #fdfcfb; }
+
+body {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  margin: 50px auto 20px auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #e94439;
+  text-decoration: none; }
+  a:hover {
+    color: #ee6f67;
+    text-decoration: underline; }
+
+h2 {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px; }
+
+h1 {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 800;
+  color: #e94439;
+  text-transform: lowercase; }
+
+p {
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 100;
+  color: white; }
+
+/* @group Placeholder */
+::-webkit-input-placeholder {
+  color: gray; }
+
+::-moz-placeholder {
+  color: gray; }
+
+:-ms-input-placeholder {
+  color: gray; }
+
+input:-moz-placeholder {
+  color: gray; }
+
+/* @end */
+/* @end */
+/* @group Header */
+header {
+  min-width: 100%;
+  width: 100%;
+  text-align: center;
+  min-height: 150px; }
+  header p {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase; }
+  header figure {
+    width: 250px;
+    background-color: #e94439;
+    box-shadow: 1px 1px 5px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
+    header figure a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      color: white; }
+      header figure a:hover {
+        color: white;
+        text-decoration: none; }
+    header figure:hover {
+      background-color: fadeout(#e94439, 25%); }
+
+/* @end */
+/* @group Article */
+article {
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  margin: 0 0 30px 0; }
+  article:first-child {
+    margin: 0; }
+  article hr {
+    max-width: 674px;
+    border-top: 1px solid #ebe5e1;
+    margin: 30px auto 0 auto; }
+  article h2 {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase; }
+  article h3 {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase;
+    margin: 15px 0 0 0; }
+  article p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: black;
+    display: inline-block;
+    margin: 15px 0 0;
+    max-width: 650px; }
+  article input[type=submit],
+  article a#button {
+    background-color: #e94439;
+    max-width: 150px;
+    color: white;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
+    article input[type=submit]:hover,
+    article a#button:hover {
+      text-decoration: none;
+      background-color: #ee6f67; }
+  article #adsense {
+    display: block;
+    margin: 55px auto 0 auto; }
+  article #mc_embed_signup {
+    max-width: 650px;
+    margin: 40px auto 50px auto; }
+    article #mc_embed_signup label {
+      font-family: Arvo, Arial, sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 400;
+      color: #e94439;
+      text-transform: uppercase; }
+    article #mc_embed_signup input {
+      border: 1px solid #f5f2f0;
+      width: 325px;
+      padding: 10px 5px;
+      margin: 10px 0;
+      color: black; }
+      article #mc_embed_signup input[type=submit] {
+        margin: 10px auto;
+        color: white;
+        cursor: pointer; }
+  article strong {
+    font-weight: 600; }
+  article figure {
+    max-width: 960px;
+    margin: 25px auto 0 auto; }
+
+/* @end */
+/* @group Footer */
+footer {
+  min-width: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 50px 0 0 0; }
+  footer p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: black;
+    display: block; }
+  footer span {
+    display: inline-block;
+    color: #e94439;
+    font-size: 20px;
+    margin: 0 3px;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear; }
+    footer span:hover {
+      color: #ee6f67; }
+  footer a {
+    color: #e94439; }
+    footer a:hover {
+      color: #ee6f67;
+      text-decoration: underline; }
+
+/* @end */

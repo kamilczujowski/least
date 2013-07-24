@@ -110,7 +110,7 @@ h2 {
 }
 
 h1 {
-	@include Arvo(60px, 75px, 400);
+	@include Arvo(60px, 75px, 800);
 	color: $red;
 	
 	text-transform: lowercase;
