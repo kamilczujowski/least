@@ -75,8 +75,8 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 ## Changelog
 
 **V.1.5 (03. July 2013)**<br /> 
-» Newtest LazyLoad library (1.8.4)<br /> 
-» Newtest jQuery library (2.0.1)<br /> 
+» New LazyLoad library (1.8.4)<br /> 
+» New jQuery library (2.0.1 - still working with jQuery 1.8)<br /> 
 » LazyLoad loading bugfix
 
 **V.1.4 (26. June 2013)**<br /> 
