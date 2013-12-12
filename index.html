@@ -10,11 +10,19 @@
 
         <link rel="author" href="https://plus.google.com/113595842256533600994" />
 
-        <link href="css/style.min.css?26062013" rel="stylesheet" />
+        <link href="css/style.min.css?12122013" rel="stylesheet" />
         <link href="css/least.min.css" rel="stylesheet" />
         <link href="css/prism.min.css" rel="stylesheet" />
     </head>
     <body>
+
+         <!-- CSS Ribbon by Simon Whitaker -->
+        <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+                <a class="anchor" href="#mc_embed_signup" onclick="_gaq.push(['_trackPageview', 'Ribber_Newsletter_KW50']);">Subscribe to our mailing list</a>
+            </div>
+        </div>
+
         <header>
             <h1>
                 least.js
@@ -32,6 +40,9 @@
                 
                 <!-- 1 -->
                 <li>
+                    <!-- Xmas: Snowflake -->
+                    <figure class="snowflake"></figure>
+
                     <a href="img/full/1.jpg"></a>
                     <img data-original="img/thumb/1.jpg" src="img/effects/white.gif" width="240" height="150" alt="Photo" />
                     
@@ -161,6 +172,9 @@
                 
                 <!-- 6 -->
                 <li>
+                    <!-- Xmas: Snowflake -->
+                    <figure class="snowflake"></figure>
+
                     <a href="img/full/6.jpg"></a>
                     <img data-original="img/thumb/6.jpg" src="img/effects/white.gif" width="240" height="150" alt="Photo" />
                     
@@ -265,6 +279,9 @@
                 
                 <!-- 10 -->
                 <li>
+                    <!-- Xmas: Snowflake -->
+                    <figure class="snowflake"></figure>
+
                     <a href="img/full/10.jpg"></a>
                     <img data-original="img/thumb/10.jpg" src="img/effects/white.gif" width="240" height="150" alt="Photo" />
                     
@@ -343,6 +360,9 @@
                 
                 <!-- 13 -->
                 <li>
+                    <!-- Xmas: Snowflake -->
+                    <figure class="snowflake"></figure>
+
                     <a href="img/full/13.jpg"></a>
                     <img data-original="img/thumb/13.jpg" src="img/effects/white.gif" width="240" height="150" alt="Photo" />
                     
@@ -572,6 +592,9 @@
             <a href="least.zip" id="button" onclick="_gaq.push(['_trackPageview', 'http://kamilczujowski.github.io/least/least.zip']);">
                 Download
             </a>
+
+            <!-- Xmas: Snowflake -->
+            <figure class="snowflake" style="left: 54%; top: 60%;"></figure>
         </article>
         
         <article>
@@ -602,6 +625,10 @@
             <p>
                 Insert the following code right after the <strong>&lt;body></strong>-tag.
             </p>
+
+            <!-- Xmas: Snowflake -->
+            <figure class="snowflake" style="left: 50%; top: 60%;"></figure>
+
 <pre class="language-markup">
 <code class="language-markup">&lt;section>
     &lt;ul id="gallery">
@@ -676,6 +703,11 @@
             <h3>
                 changelog:
             </h3>
+
+            <!-- Xmas: Snowflake -->
+            <figure class="snowflake" style="left: 70%; top: 60%;"></figure>
+
+
             <!-- V.1.5 -->
             <p style="text-align: left;">
                 <em>V.1.5 (03. July 2013)</em>
@@ -732,6 +764,10 @@
             <!-- Begin MailChimp Signup Form -->
             <div id="mc_embed_signup">
                 <form action="http://kamilczujowski.us7.list-manage.com/subscribe/post?u=bf71485665b4c8c0e654491f8&amp;id=35f71619d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                    <!-- Xmas: Snowflake -->
+                    <figure class="snowflake" style="left: 53%; top: 30%;"></figure>
+
                     <label for="mce-EMAIL">Subscribe to our mailing list</label>
                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="E-Mail Address" required>
                     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -785,6 +821,9 @@
             <p>
                 <small>Photos Credits: <a href="http://mariusengels.com" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://mariusengels.com']);">Marius Engels</a>, <a href="http://unsplash.com" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://unsplash.com']);">Unsplash</a>, <a href="http://wpcoder.de" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://wpcoder.de']);">Sergej Müller</a> &amp; <a href="http://visuellegedanken.de" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://visuellegedanken.de']);">Martin Wolf</a></small>
             </p>
+            <p>
+                <small>Icons Credits: <a href="http://iconmonstr.com" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://iconmonstr.com']);">iconmonstr</a></small>
+            </p>
         </footer>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.lazyload.min.js"></script>
@@ -820,6 +859,15 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
         
+        </script>
+
+        <!-- Xmas -->
+        <script>
+            $('a.anchor').click(function(){
+                $('html, body').animate({
+                    scrollTop: $( $.attr(this, 'href') ).offset().top
+                }, 500);
+            });
         </script>
     </body>
 </html>

@@ -230,6 +230,7 @@ article {
 	}
 	input[type=submit],
 	a#button {
+		-webkit-appearance: none;
 		background-color: $red;
 		
 		max-width: 150px;
@@ -335,6 +336,119 @@ footer {
 			color: lighten($red, 10%);
 			text-decoration: underline;
 		}
+	}
+}
+/* @end */
+
+/* @group X-Mas */
+header {
+	h1 {
+		position: relative;
+
+		&:after {
+			
+			content: '';
+
+			background-size: 100%;
+			background-image: url('../img/christmas/hat.png');
+
+			width: 100px;
+			height: 66px;
+
+			display: block;
+
+			position: absolute;
+			top: -10px;
+			left: 54%;
+
+			@include rotate(rotate(20deg));
+		}
+	}
+}
+
+article {
+	position: relative;
+}
+
+.snowflake {
+	background-size: 100%;
+	background-image: url('../img/christmas/snowflake.png');
+
+	width: 50px;
+	height: 50px;
+
+	position: absolute;
+}
+ /* CSS Ribbon by Simon Whitaker */
+ .github-fork-ribbon {
+   position: absolute;
+   padding: 2px 0;
+
+   background-color: $red;
+
+   /* Add a drop shadow */
+   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+
+   z-index: 9999;
+   pointer-events: auto;
+ }
+
+ .github-fork-ribbon a,
+ .github-fork-ribbon a:hover {
+   @include Helvetica(13px, 20px, 400);
+   color: $white;
+
+   /* Set the text properties */
+   text-decoration: none;
+   text-shadow: 0 -1px rgba(0,0,0,0.5);
+   text-align: center;
+
+   /* Set the geometry. If you fiddle with these you'll also need to tweak the top and right values in #github-fork-ribbon. */
+   width: 220px;
+
+   display: inline-block;
+   padding: 2px 0;
+
+   /* Add "stitching" effect */
+   border-width: 1px 0;
+   border-style: dotted;
+   border-color: rgba(255,255,255,0.7);
+ }
+
+ .github-fork-ribbon-wrapper {
+   width: 180px;
+   height: 165px;
+   position: absolute;
+   overflow: hidden;
+   top: -50px;
+   z-index: 9999;
+   pointer-events: none;
+ }
+
+ .github-fork-ribbon-wrapper.fixed {
+   position: fixed;
+ }
+ .github-fork-ribbon-wrapper.right {
+   right: 0;
+ }
+
+ .github-fork-ribbon-wrapper.right .github-fork-ribbon {
+   top: 50px;
+   right: -43px;
+
+   @include rotate(rotate(45deg));
+ }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	h1 {
+		&:after {
+			background-image: url('../img/christmas/hat@2x.png');
+		}
+	}
+
+	.snowflake {
+		background-image: url('../img/christmas/snowflake@2x.png');
 	}
 }
 /* @end */

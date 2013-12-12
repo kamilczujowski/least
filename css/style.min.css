@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 /**
 *** least.
@@ -18,26 +19,32 @@
   border: 0;
   margin: 0;
   padding: 0;
-  outline: 0; }
+  outline: 0;
+}
 
 html {
-  background-color: #fdfcfb; }
+  background-color: #fdfcfb;
+}
 
 body {
   height: 100%;
   min-height: 100%;
   position: relative;
-  margin: 50px auto 20px auto; }
+  margin: 50px auto 20px auto;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 a {
   color: #e94439;
-  text-decoration: none; }
-  a:hover {
-    color: #ee6f67;
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  color: #ee6f67;
+  text-decoration: underline;
+}
 
 h2 {
   font-family: Arvo, Arial, sans-serif;
@@ -46,7 +53,8 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 h1 {
   font-family: Arvo, Arial, sans-serif;
@@ -54,27 +62,33 @@ h1 {
   line-height: 75px;
   font-weight: 800;
   color: #e94439;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+}
 
 p {
   font-family: Georgia, Arial, sans-serif;
   font-size: 15px;
   line-height: 15px;
   font-weight: 100;
-  color: white; }
+  color: white;
+}
 
 /* @group Placeholder */
 ::-webkit-input-placeholder {
-  color: gray; }
+  color: gray;
+}
 
 ::-moz-placeholder {
-  color: gray; }
+  color: gray;
+}
 
 :-ms-input-placeholder {
-  color: gray; }
+  color: gray;
+}
 
 input:-moz-placeholder {
-  color: gray; }
+  color: gray;
+}
 
 /* @end */
 /* @end */
@@ -83,44 +97,50 @@ header {
   min-width: 100%;
   width: 100%;
   text-align: center;
-  min-height: 150px; }
-  header p {
-    font-family: Arvo, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #e94439;
-    text-transform: uppercase; }
-  header figure {
-    width: 250px;
-    background-color: #e94439;
-    box-shadow: 1px 1px 5px;
-    position: absolute;
-    right: -60px;
-    top: 0;
-    overflow: hidden;
-    padding: 5px 0;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: background-color 0.5s linear;
-    -moz-transition: background-color 0.5s linear;
-    -ms-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear; }
-    header figure a {
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 400;
-      color: white; }
-      header figure a:hover {
-        color: white;
-        text-decoration: none; }
-    header figure:hover {
-      background-color: fadeout(#e94439, 25%); }
+  min-height: 150px;
+}
+header p {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #e94439;
+  text-transform: uppercase;
+}
+header figure {
+  width: 250px;
+  background-color: #e94439;
+  box-shadow: 1px 1px 5px;
+  position: absolute;
+  right: -60px;
+  top: 0;
+  overflow: hidden;
+  padding: 5px 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+header figure a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+}
+header figure a:hover {
+  color: white;
+  text-decoration: none;
+}
+header figure:hover {
+  background-color: fadeout(#e94439, 25%);
+}
 
 /* @end */
 /* @group Article */
@@ -128,90 +148,107 @@ article {
   width: 100%;
   min-width: 100%;
   text-align: center;
-  margin: 0 0 30px 0; }
-  article:first-child {
-    margin: 0; }
-  article hr {
-    max-width: 674px;
-    border-top: 1px solid #ebe5e1;
-    margin: 30px auto 0 auto; }
-  article h2 {
-    font-family: Arvo, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #e94439;
-    text-transform: uppercase; }
-  article h3 {
-    font-family: Arvo, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 400;
-    color: #e94439;
-    text-transform: uppercase;
-    margin: 15px 0 0 0; }
-  article p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 300;
-    color: black;
-    display: inline-block;
-    margin: 15px 0 0;
-    max-width: 650px; }
-  article input[type=submit],
-  article a#button {
-    background-color: #e94439;
-    max-width: 150px;
-    color: white;
-    display: block;
-    margin: 20px auto 0 auto;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 300;
-    -webkit-transition: background-color 0.5s linear;
-    -moz-transition: background-color 0.5s linear;
-    -ms-transition: background-color 0.5s linear;
-    -o-transition: background-color 0.5s linear;
-    transition: background-color 0.5s linear; }
-    article input[type=submit]:hover,
-    article a#button:hover {
-      text-decoration: none;
-      background-color: #ee6f67; }
-  article #adsense {
-    display: block;
-    margin: 55px auto 0 auto; }
-  article #mc_embed_signup {
-    max-width: 650px;
-    margin: 40px auto 50px auto; }
-    article #mc_embed_signup label {
-      font-family: Arvo, Arial, sans-serif;
-      font-size: 20px;
-      line-height: 25px;
-      font-weight: 400;
-      color: #e94439;
-      text-transform: uppercase; }
-    article #mc_embed_signup input {
-      border: 1px solid #f5f2f0;
-      width: 325px;
-      padding: 10px 5px;
-      margin: 10px 0;
-      color: black; }
-      article #mc_embed_signup input[type=submit] {
-        margin: 10px auto;
-        color: white;
-        cursor: pointer; }
-  article strong {
-    font-weight: 600; }
-  article figure {
-    max-width: 960px;
-    margin: 25px auto 0 auto; }
-    article figure .gplus {
-      margin-left: 15px;
-      display: inline-block; }
+  margin: 0 0 30px 0;
+}
+article:first-child {
+  margin: 0;
+}
+article hr {
+  max-width: 674px;
+  border-top: 1px solid #ebe5e1;
+  margin: 30px auto 0 auto;
+}
+article h2 {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #e94439;
+  text-transform: uppercase;
+}
+article h3 {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #e94439;
+  text-transform: uppercase;
+  margin: 15px 0 0 0;
+}
+article p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: black;
+  display: inline-block;
+  margin: 15px 0 0;
+  max-width: 650px;
+}
+article input[type=submit],
+article a#button {
+  -webkit-appearance: none;
+  background-color: #e94439;
+  max-width: 150px;
+  color: white;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+article input[type=submit]:hover,
+article a#button:hover {
+  text-decoration: none;
+  background-color: #ee6f67;
+}
+article #adsense {
+  display: block;
+  margin: 55px auto 0 auto;
+}
+article #mc_embed_signup {
+  max-width: 650px;
+  margin: 40px auto 50px auto;
+}
+article #mc_embed_signup label {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #e94439;
+  text-transform: uppercase;
+}
+article #mc_embed_signup input {
+  border: 1px solid #f5f2f0;
+  width: 325px;
+  padding: 10px 5px;
+  margin: 10px 0;
+  color: black;
+}
+article #mc_embed_signup input[type=submit] {
+  margin: 10px auto;
+  color: white;
+  cursor: pointer;
+}
+article strong {
+  font-weight: 600;
+}
+article figure {
+  max-width: 960px;
+  margin: 25px auto 0 auto;
+}
+article figure .gplus {
+  margin-left: 15px;
+  display: inline-block;
+}
 
 /* @end */
 /* @group Footer */
@@ -219,30 +256,140 @@ footer {
   min-width: 100%;
   width: 100%;
   text-align: center;
-  margin: 50px 0 0 0; }
-  footer p {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 300;
-    color: black;
-    display: block; }
-  footer span {
-    display: inline-block;
-    color: #e94439;
-    font-size: 20px;
-    margin: 0 3px;
-    -webkit-transition: color 0.5s linear;
-    -moz-transition: color 0.5s linear;
-    -ms-transition: color 0.5s linear;
-    -o-transition: color 0.5s linear;
-    transition: color 0.5s linear; }
-    footer span:hover {
-      color: #ee6f67; }
-  footer a {
-    color: #e94439; }
-    footer a:hover {
-      color: #ee6f67;
-      text-decoration: underline; }
+  margin: 50px 0 0 0;
+}
+footer p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: black;
+  display: block;
+}
+footer span {
+  display: inline-block;
+  color: #e94439;
+  font-size: 20px;
+  margin: 0 3px;
+  -webkit-transition: color 0.5s linear;
+  -moz-transition: color 0.5s linear;
+  -ms-transition: color 0.5s linear;
+  -o-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+footer span:hover {
+  color: #ee6f67;
+}
+footer a {
+  color: #e94439;
+}
+footer a:hover {
+  color: #ee6f67;
+  text-decoration: underline;
+}
 
+/* @end */
+/* @group X-Mas */
+header h1 {
+  position: relative;
+}
+header h1:after {
+  content: '';
+  background-size: 100%;
+  background-image: url("../img/christmas/hat.png");
+  width: 100px;
+  height: 66px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 54%;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+article {
+  position: relative;
+}
+
+.snowflake {
+  background-size: 100%;
+  background-image: url("../img/christmas/snowflake.png");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+/* CSS Ribbon by Simon Whitaker */
+.github-fork-ribbon {
+  position: absolute;
+  padding: 2px 0;
+  background-color: #e94439;
+  /* Add a drop shadow */
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+  /* Set the text properties */
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  /* Set the geometry. If you fiddle with these you'll also need to tweak the top and right values in #github-fork-ribbon. */
+  width: 220px;
+  display: inline-block;
+  padding: 2px 0;
+  /* Add "stitching" effect */
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.github-fork-ribbon-wrapper {
+  width: 180px;
+  height: 165px;
+  position: absolute;
+  overflow: hidden;
+  top: -50px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.github-fork-ribbon-wrapper.fixed {
+  position: fixed;
+}
+
+.github-fork-ribbon-wrapper.right {
+  right: 0;
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  top: 50px;
+  right: -43px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  h1:after {
+    background-image: url("../img/christmas/hat@2x.png");
+  }
+
+  .snowflake {
+    background-image: url("../img/christmas/snowflake@2x.png");
+  }
+}
 /* @end */
