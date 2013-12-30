@@ -108,4 +108,4 @@ Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Serg
 <br /> © 2013 Hamburg, Germany<br /> 
 Version: 1.5
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kamilczujowski/least/trend.png)]
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kamilczujowski/least/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
