@@ -107,3 +107,5 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
 <br /> © 2013 Hamburg, Germany<br /> 
 Version: 1.5
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kamilczujowski/least/trend.png)]
