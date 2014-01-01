@@ -289,39 +289,6 @@ footer a:hover {
 }
 
 /* @end */
-/* @group X-Mas */
-header h1 {
-  position: relative;
-}
-header h1:after {
-  content: '';
-  background-size: 100%;
-  background-image: url("../img/christmas/hat.png");
-  width: 100px;
-  height: 66px;
-  display: block;
-  position: absolute;
-  top: -10px;
-  left: 54%;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
-
-article {
-  position: relative;
-}
-
-.snowflake {
-  background-size: 100%;
-  background-image: url("../img/christmas/snowflake.png");
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-
 /* CSS Ribbon by Simon Whitaker */
 .github-fork-ribbon {
   position: absolute;
@@ -383,13 +350,4 @@ article {
   transform: rotate(45deg);
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  h1:after {
-    background-image: url("../img/christmas/hat@2x.png");
-  }
-
-  .snowflake {
-    background-image: url("../img/christmas/snowflake@2x.png");
-  }
-}
 /* @end */
