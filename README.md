@@ -1,3 +1,6 @@
+[<h3 align="center">PLEASE CHECK THE NEW VERSION OF THIS PLUGIN</h3>](https://github.com/kamilczujowski/least.js-2)
+<br />
+<br />
 least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad
 
 ##### [Click here to see the demo](http://kamilczujowski.github.io/least/)
@@ -104,7 +107,7 @@ least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with Laz
 - slider function
 - simple integration
 
-Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski) and [Sergej Müller](http://wpcoder.de)
+Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski)
 <br /> © 2013 Hamburg, Germany<br /> 
 Version: 1.5
 
