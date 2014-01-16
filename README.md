@@ -1,4 +1,9 @@
-[<h3 align="center">PLEASE CHECK THE NEW VERSION OF THIS PLUGIN</h3>](https://github.com/kamilczujowski/least.js-2)
+[<h3 align="center">#leastjs 2 is available for download now!</h3>](https://github.com/kamilczujowski/least.js-2)
+<div align="center">
+    <a href="http://leastjs.com" style="text-align: center;">Visit our Homepage!</a>
+</div>
+<br />
+---
 <br />
 <br />
 least.js is a Random &amp; Responsive jQuery, HTML 5 &amp; CSS3 Gallery with LazyLoad
