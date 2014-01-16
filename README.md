@@ -1,4 +1,11 @@
+<div align="center">
+    <a href="http://leastjs.com" target="_blank">
+     <img src="http://www.leastjs.com/src/img/least_logo.svg">
+  </a>
+</div>
+
 [<h3 align="center">#leastjs 2 is available for download now!</h3>](https://github.com/kamilczujowski/least.js-2)
+
 <div align="center">
     <a href="http://leastjs.com" style="text-align: center;">Visit our Homepage!</a>
 </div>
