@@ -839,6 +839,10 @@
                     $('.layer').fadeOut();
                 }
             );
+
+            $(document).keydown(function(event) {
+                if(event.keyCode === 27){ $('.layer').fadeOut(); }
+            });
         });
         </script>
         
