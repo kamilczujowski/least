@@ -799,6 +799,27 @@
                 <small>Icons Credits: <a href="http://iconmonstr.com" target="_blank" onclick="_gaq.push(['_trackPageview', 'http://iconmonstr.com']);">iconmonstr</a></small>
             </p>
         </footer>
+
+        <div class="layer">
+            <div class="container">
+                <a href="#" class="close">CLOSE</a>
+
+                <a href="http://leastjs.com" target="_blank">
+                    <img src="http://www.leastjs.com/src/img/least_logo.svg">
+
+                    <h1>
+                        #leastjs 2 is available for download now!
+                    </h1>
+
+                    <h2>
+                        Visit our Homepage!
+                    </h2>
+                </a>
+
+
+            </div>
+        </div>
+
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.lazyload.min.js"></script>
         
@@ -808,6 +829,16 @@
         <script>
         $(document).ready(function(){
             $('#gallery').least();
+
+            /* hide layer */
+            $('.close').on(
+                'click', 
+                function(event) {
+                    event.preventDefault();
+
+                    $('.layer').fadeOut();
+                }
+            );
         });
         </script>
         

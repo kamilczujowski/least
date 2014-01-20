@@ -328,7 +328,7 @@ footer a:hover {
   position: absolute;
   overflow: hidden;
   top: -50px;
-  z-index: 9999;
+  z-index: 9997;
   pointer-events: none;
 }
 
@@ -348,6 +348,69 @@ footer a:hover {
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* @end */
+/* @group Overlay */
+.layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  display: block;
+  background: white;
+  background: rgba(255, 255, 255, 0.7);
+}
+.layer .container {
+  width: 450px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -250px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid;
+  border-color: #f5244a;
+  z-index: 99999;
+  display: block;
+  text-align: center;
+}
+.layer .container a.close {
+  background-size: 100%;
+  background-image: url("http://leastjs.com/src/img/close.svg");
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-indent: -9999px;
+}
+.layer .container a {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.layer .container a h1, .layer .container a h2 {
+  font-family: Arvo, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #f5244a;
+}
+.layer .container a h1 {
+  margin-top: 25px;
+}
+.layer .container a h2 {
+  margin-top: 50px;
+}
+.layer .container a:hover {
+  text-decoration: none;
 }
 
 /* @end */

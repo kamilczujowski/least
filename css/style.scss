@@ -55,12 +55,18 @@
     transform: $arguments;
 }
 
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
 /* @end */
 
 /* @group Colors */
 $black: #000;
 $white: #fff;
 $red: #e94439;
+$least-red: #f5244a;
 $codeBlue: #53a0cd;
 $whiteLight: #fafafa;
 
@@ -383,7 +389,7 @@ footer {
    position: absolute;
    overflow: hidden;
    top: -50px;
-   z-index: 9999;
+   z-index: 9997;
    pointer-events: none;
  }
 
@@ -400,4 +406,78 @@ footer {
 
    @include rotate(rotate(45deg));
  }
+/* @end */
+
+/* @group Overlay */
+.layer {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 9998;
+
+	display: block;
+
+	@include background-opacity($white, 0.7);
+
+	.container {
+		width: 450px;
+		height: 400px;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		margin: -225px 0 0 -250px;
+		padding: 20px;
+
+		background-color: $white;
+
+		border: 3px solid;
+		border-color: $least-red;
+		
+		z-index: 99999;
+		display: block;
+
+		text-align: center;
+
+		a.close {
+			background-size: 100%;
+			background-image: url("http://leastjs.com/src/img/close.svg");
+			width: 30px;
+			height: 30px;
+			display: block;
+			cursor: pointer;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+
+			text-indent: -9999px;
+		}
+
+		a {
+			@include Helvetica(20px, 22px, 300);
+
+			h1, h2 {
+				@include Arvo(30px, 40px, 300);
+				color: $least-red;
+			}
+
+			h1 {
+				margin-top: 25px;
+			}
+
+			h2 {
+				margin-top: 50px;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
 /* @end */
