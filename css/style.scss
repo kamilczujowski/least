@@ -1,5 +1,5 @@
 /**
-*** least.
+*** least.js
 *** Author: Kamil Czujowski, Sergej Müller
 *** Version: 1.5
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
@@ -419,7 +419,7 @@ footer {
 
 	z-index: 9998;
 
-	display: block;
+	display: none;
 
 	@include background-opacity($white, 0.7);
 

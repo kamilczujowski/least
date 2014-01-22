@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 /**
-*** least.
+*** least.js
 *** Author: Kamil Czujowski, Sergej Müller
 *** Version: 1.5
 *** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
@@ -19,32 +19,26 @@
   border: 0;
   margin: 0;
   padding: 0;
-  outline: 0;
-}
+  outline: 0; }
 
 html {
-  background-color: #fdfcfb;
-}
+  background-color: #fdfcfb; }
 
 body {
   height: 100%;
   min-height: 100%;
   position: relative;
-  margin: 50px auto 20px auto;
-}
+  margin: 50px auto 20px auto; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   color: #e94439;
-  text-decoration: none;
-}
-a:hover {
-  color: #ee6f67;
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  a:hover {
+    color: #ee6f67;
+    text-decoration: underline; }
 
 h2 {
   font-family: Arvo, Arial, sans-serif;
@@ -53,8 +47,7 @@ h2 {
   font-weight: 500;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 h1 {
   font-family: Arvo, Arial, sans-serif;
@@ -62,33 +55,27 @@ h1 {
   line-height: 75px;
   font-weight: 800;
   color: #e94439;
-  text-transform: lowercase;
-}
+  text-transform: lowercase; }
 
 p {
   font-family: Georgia, Arial, sans-serif;
   font-size: 15px;
   line-height: 15px;
   font-weight: 100;
-  color: white;
-}
+  color: white; }
 
 /* @group Placeholder */
 ::-webkit-input-placeholder {
-  color: gray;
-}
+  color: gray; }
 
 ::-moz-placeholder {
-  color: gray;
-}
+  color: gray; }
 
 :-ms-input-placeholder {
-  color: gray;
-}
+  color: gray; }
 
 input:-moz-placeholder {
-  color: gray;
-}
+  color: gray; }
 
 /* @end */
 /* @end */
@@ -97,50 +84,44 @@ header {
   min-width: 100%;
   width: 100%;
   text-align: center;
-  min-height: 150px;
-}
-header p {
-  font-family: Arvo, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #e94439;
-  text-transform: uppercase;
-}
-header figure {
-  width: 250px;
-  background-color: #e94439;
-  box-shadow: 1px 1px 5px;
-  position: absolute;
-  right: -60px;
-  top: 0;
-  overflow: hidden;
-  padding: 5px 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: background-color 0.5s linear;
-  -moz-transition: background-color 0.5s linear;
-  -ms-transition: background-color 0.5s linear;
-  -o-transition: background-color 0.5s linear;
-  transition: background-color 0.5s linear;
-}
-header figure a {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: white;
-}
-header figure a:hover {
-  color: white;
-  text-decoration: none;
-}
-header figure:hover {
-  background-color: fadeout(#e94439, 25%);
-}
+  min-height: 150px; }
+  header p {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase; }
+  header figure {
+    width: 250px;
+    background-color: #e94439;
+    box-shadow: 1px 1px 5px;
+    position: absolute;
+    right: -60px;
+    top: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
+    header figure a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      color: white; }
+      header figure a:hover {
+        color: white;
+        text-decoration: none; }
+    header figure:hover {
+      background-color: fadeout(#e94439, 25%); }
 
 /* @end */
 /* @group Article */
@@ -148,107 +129,91 @@ article {
   width: 100%;
   min-width: 100%;
   text-align: center;
-  margin: 0 0 30px 0;
-}
-article:first-child {
-  margin: 0;
-}
-article hr {
-  max-width: 674px;
-  border-top: 1px solid #ebe5e1;
-  margin: 30px auto 0 auto;
-}
-article h2 {
-  font-family: Arvo, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #e94439;
-  text-transform: uppercase;
-}
-article h3 {
-  font-family: Arvo, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #e94439;
-  text-transform: uppercase;
-  margin: 15px 0 0 0;
-}
-article p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 300;
-  color: black;
-  display: inline-block;
-  margin: 15px 0 0;
-  max-width: 650px;
-}
-article input[type=submit],
-article a#button {
-  -webkit-appearance: none;
-  background-color: #e94439;
-  max-width: 150px;
-  color: white;
-  display: block;
-  margin: 20px auto 0 auto;
-  padding: 15px 30px;
-  border-radius: 8px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 300;
-  -webkit-transition: background-color 0.5s linear;
-  -moz-transition: background-color 0.5s linear;
-  -ms-transition: background-color 0.5s linear;
-  -o-transition: background-color 0.5s linear;
-  transition: background-color 0.5s linear;
-}
-article input[type=submit]:hover,
-article a#button:hover {
-  text-decoration: none;
-  background-color: #ee6f67;
-}
-article #adsense {
-  display: block;
-  margin: 55px auto 0 auto;
-}
-article #mc_embed_signup {
-  max-width: 650px;
-  margin: 40px auto 50px auto;
-}
-article #mc_embed_signup label {
-  font-family: Arvo, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 400;
-  color: #e94439;
-  text-transform: uppercase;
-}
-article #mc_embed_signup input {
-  border: 1px solid #f5f2f0;
-  width: 325px;
-  padding: 10px 5px;
-  margin: 10px 0;
-  color: black;
-}
-article #mc_embed_signup input[type=submit] {
-  margin: 10px auto;
-  color: white;
-  cursor: pointer;
-}
-article strong {
-  font-weight: 600;
-}
-article figure {
-  max-width: 960px;
-  margin: 25px auto 0 auto;
-}
-article figure .gplus {
-  margin-left: 15px;
-  display: inline-block;
-}
+  margin: 0 0 30px 0; }
+  article:first-child {
+    margin: 0; }
+  article hr {
+    max-width: 674px;
+    border-top: 1px solid #ebe5e1;
+    margin: 30px auto 0 auto; }
+  article h2 {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase; }
+  article h3 {
+    font-family: Arvo, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #e94439;
+    text-transform: uppercase;
+    margin: 15px 0 0 0; }
+  article p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: black;
+    display: inline-block;
+    margin: 15px 0 0;
+    max-width: 650px; }
+  article input[type=submit],
+  article a#button {
+    -webkit-appearance: none;
+    background-color: #e94439;
+    max-width: 150px;
+    color: white;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    -webkit-transition: background-color 0.5s linear;
+    -moz-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    -o-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear; }
+    article input[type=submit]:hover,
+    article a#button:hover {
+      text-decoration: none;
+      background-color: #ee6f67; }
+  article #adsense {
+    display: block;
+    margin: 55px auto 0 auto; }
+  article #mc_embed_signup {
+    max-width: 650px;
+    margin: 40px auto 50px auto; }
+    article #mc_embed_signup label {
+      font-family: Arvo, Arial, sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 400;
+      color: #e94439;
+      text-transform: uppercase; }
+    article #mc_embed_signup input {
+      border: 1px solid #f5f2f0;
+      width: 325px;
+      padding: 10px 5px;
+      margin: 10px 0;
+      color: black; }
+      article #mc_embed_signup input[type=submit] {
+        margin: 10px auto;
+        color: white;
+        cursor: pointer; }
+  article strong {
+    font-weight: 600; }
+  article figure {
+    max-width: 960px;
+    margin: 25px auto 0 auto; }
+    article figure .gplus {
+      margin-left: 15px;
+      display: inline-block; }
 
 /* @end */
 /* @group Footer */
@@ -256,37 +221,31 @@ footer {
   min-width: 100%;
   width: 100%;
   text-align: center;
-  margin: 50px 0 0 0;
-}
-footer p {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
-  color: black;
-  display: block;
-}
-footer span {
-  display: inline-block;
-  color: #e94439;
-  font-size: 20px;
-  margin: 0 3px;
-  -webkit-transition: color 0.5s linear;
-  -moz-transition: color 0.5s linear;
-  -ms-transition: color 0.5s linear;
-  -o-transition: color 0.5s linear;
-  transition: color 0.5s linear;
-}
-footer span:hover {
-  color: #ee6f67;
-}
-footer a {
-  color: #e94439;
-}
-footer a:hover {
-  color: #ee6f67;
-  text-decoration: underline;
-}
+  margin: 50px 0 0 0; }
+  footer p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: black;
+    display: block; }
+  footer span {
+    display: inline-block;
+    color: #e94439;
+    font-size: 20px;
+    margin: 0 3px;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear; }
+    footer span:hover {
+      color: #ee6f67; }
+  footer a {
+    color: #e94439; }
+    footer a:hover {
+      color: #ee6f67;
+      text-decoration: underline; }
 
 /* @end */
 /* CSS Ribbon by Simon Whitaker */
@@ -298,8 +257,7 @@ footer a:hover {
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  pointer-events: auto;
-}
+  pointer-events: auto; }
 
 .github-fork-ribbon a,
 .github-fork-ribbon a:hover {
@@ -319,8 +277,7 @@ footer a:hover {
   /* Add "stitching" effect */
   border-width: 1px 0;
   border-style: dotted;
-  border-color: rgba(255, 255, 255, 0.7);
-}
+  border-color: rgba(255, 255, 255, 0.7); }
 
 .github-fork-ribbon-wrapper {
   width: 180px;
@@ -329,16 +286,13 @@ footer a:hover {
   overflow: hidden;
   top: -50px;
   z-index: 9997;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .github-fork-ribbon-wrapper.fixed {
-  position: fixed;
-}
+  position: fixed; }
 
 .github-fork-ribbon-wrapper.right {
-  right: 0;
-}
+  right: 0; }
 
 .github-fork-ribbon-wrapper.right .github-fork-ribbon {
   top: 50px;
@@ -347,8 +301,7 @@ footer a:hover {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+  transform: rotate(45deg); }
 
 /* @end */
 /* @group Overlay */
@@ -359,58 +312,50 @@ footer a:hover {
   top: 0;
   left: 0;
   z-index: 9998;
-  display: block;
+  display: none;
   background: white;
-  background: rgba(255, 255, 255, 0.7);
-}
-.layer .container {
-  width: 450px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -225px 0 0 -250px;
-  padding: 20px;
-  background-color: white;
-  border: 3px solid;
-  border-color: #f5244a;
-  z-index: 99999;
-  display: block;
-  text-align: center;
-}
-.layer .container a.close {
-  background-size: 100%;
-  background-image: url("http://leastjs.com/src/img/close.svg");
-  width: 30px;
-  height: 30px;
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  text-indent: -9999px;
-}
-.layer .container a {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 300;
-}
-.layer .container a h1, .layer .container a h2 {
-  font-family: Arvo, Arial, sans-serif;
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 300;
-  color: #f5244a;
-}
-.layer .container a h1 {
-  margin-top: 25px;
-}
-.layer .container a h2 {
-  margin-top: 50px;
-}
-.layer .container a:hover {
-  text-decoration: none;
-}
+  background: rgba(255, 255, 255, 0.7); }
+  .layer .container {
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -225px 0 0 -250px;
+    padding: 20px;
+    background-color: white;
+    border: 3px solid;
+    border-color: #f5244a;
+    z-index: 99999;
+    display: block;
+    text-align: center; }
+    .layer .container a.close {
+      background-size: 100%;
+      background-image: url("http://leastjs.com/src/img/close.svg");
+      width: 30px;
+      height: 30px;
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-indent: -9999px; }
+    .layer .container a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 300; }
+      .layer .container a h1, .layer .container a h2 {
+        font-family: Arvo, Arial, sans-serif;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300;
+        color: #f5244a; }
+      .layer .container a h1 {
+        margin-top: 25px; }
+      .layer .container a h2 {
+        margin-top: 50px; }
+      .layer .container a:hover {
+        text-decoration: none; }
 
 /* @end */
