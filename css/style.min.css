@@ -28,7 +28,7 @@ body {
   height: 100%;
   min-height: 100%;
   position: relative;
-  margin: 50px auto 20px auto; }
+  margin: 50px auto 20px auto;}
 
 ul {
   list-style: none; }
@@ -312,7 +312,7 @@ footer {
   top: 0;
   left: 0;
   z-index: 9998;
-  display: none;
+  display: block;
   background: white;
   background: rgba(255, 255, 255, 0.7); }
   .layer .container {
