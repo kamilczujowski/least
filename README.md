@@ -13,6 +13,6 @@ Please use the newtest #leastjs (2) version!</h2>
 <br />
 <a href="http://leastjs.com" style="text-align: center;">Visit our Homepage!</a>
 <br />
-Made with ♥ by [Kamil Czujowski](https://twitter.com/kamilczujowski)
+Made with ♥ by https://twitter.com/kamilczujowski
 <br /> © 2013 Hamburg, Germany
 </div>
